@@ -4,4 +4,4 @@ To use include the line
 ```
 extends texgreek, texstatements
 ```
-in the `tex.snippets` file in the 
+in the `tex.snippets` file.
