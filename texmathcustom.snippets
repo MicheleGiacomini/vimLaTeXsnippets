@@ -1,0 +1,35 @@
+global !p
+from snippet_helpers import math
+endglobal
+
+# File containing misc snippet for latex math.
+
+# Sub/Superscripts
+
+context "math()"
+snippet "[^ ]*\^" "^" rA
+`!p snip.rv = match.group(0)`{$0}
+endsnippet
+
+context "math()"
+snippet "[^ ]*\_" "_" rA
+`!p snip.rv = match.group(0)`{$0}
+endsnippet
+
+
+# Parentheses, brackets, braces
+
+context "math()"
+snippet lp "()" wA
+\left( $0 \right)
+endsnippet
+
+context "math()"
+snippet lb "[]" wA
+\left[ $0 \right]
+endsnippet
+
+context "math()"
+snippet br "{}" wA
+\left\{ $0 \right\}
+endsnippet
